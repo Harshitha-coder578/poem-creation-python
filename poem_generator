@@ -1,1 +1,18 @@
 C:\Users\mru\Desktop\poem-creation-python\poem_generator.py
+import random
+
+lines = [
+    "The moon whispers secrets to the night,",
+    "Stars dance softly in silver light,",
+    "Dreams wander where silence grows,",
+    "The wind sings truths nobody knows,",
+    "Hope blooms in shadows deep and wide,",
+    "Time flows like a gentle tide."
+]
+
+def generate_poem(lines, num_lines=4):
+    poem = random.sample(lines, num_lines)
+    return "\n".join(poem)
+
+print("\nGenerated Poem:\n")
+print(generate_poem(lines))
